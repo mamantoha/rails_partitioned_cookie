@@ -14,9 +14,6 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/mamantoha/rails_partitioned_cookie'
   spec.license       = 'MIT'
 
-  spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/mamantoha/rails_partitioned_cookie'
-
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
@@ -26,8 +23,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'rubocop'
+  spec.required_ruby_version = '>= 3.1'
 
-  spec.add_dependency 'rack'
+  spec.add_development_dependency 'rspec', "~> 3.0"
+  spec.add_development_dependency 'rubocop', '~> 1.66', '>= 1.66.1'
+
+  spec.add_dependency 'rack', '~> 2.2', '>=2.2.4'
 end
