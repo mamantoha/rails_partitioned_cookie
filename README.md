@@ -6,6 +6,8 @@
 
 This gem sets the `Partitioned` directive on all cookies coming from your Rails app.
 
+Check this for more info <https://developers.google.com/privacy-sandbox/cookies/chips>
+
 ## Installing
 
 Add to your `Gemfile`:
@@ -29,6 +31,3 @@ Then `bundle install`
 Copyright: 2024 Anton Maminov (anton.maminov@gmail.com)
 
 This library is distributed under the MIT license. Please see the LICENSE file.
-
-[rubygems_badge]: http://img.shields.io/gem/v/rails_partitioned_cookie.svg?style=flat
-[rubygems]: http://rubygems.org/gems/rails_partitioned_cookie
