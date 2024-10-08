@@ -24,7 +24,7 @@ Then `bundle install`
 
 ## License
 
-Copyright: 2011-2023 Anton Maminov (anton.maminov@gmail.com)
+Copyright: 2024 Anton Maminov (anton.maminov@gmail.com)
 
 This library is distributed under the MIT license. Please see the LICENSE file.
 
