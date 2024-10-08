@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MockRackAppWithSameSiteCookie
   attr_reader :request_headers
 
@@ -8,7 +10,7 @@ class MockRackAppWithSameSiteCookie
   def call(env)
     @env = env
     @set_cookie_header = env['HTTP_SET_COOKIE']
-    [200, { 'Content-Type' => 'text/plain', 'Set-Cookie' => "SameSite=None; " }, ['OK']]
+    [200, { 'Content-Type' => 'text/plain', 'Set-Cookie' => 'SameSite=None; ' }, ['OK']]
   end
 
   def [](key)
@@ -26,7 +28,7 @@ class MockRackAppWithoutSameSiteCookie
   def call(env)
     @env = env
     @set_cookie_header = env['HTTP_SET_COOKIE']
-    [200, { 'Content-Type' => 'text/plain', 'Set-Cookie' => "SameSite=Lax; " }, ['OK']]
+    [200, { 'Content-Type' => 'text/plain', 'Set-Cookie' => 'SameSite=Lax; ' }, ['OK']]
   end
 
   def [](key)

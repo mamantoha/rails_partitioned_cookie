@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 module RailsPartitionedCookie
   class Middleware
-    COOKIE_SEPARATOR = "\n".freeze
+    COOKIE_SEPARATOR = "\n"
 
     def initialize(app)
       @app = app
