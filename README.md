@@ -1,7 +1,7 @@
 # RailsPartitionedCookie
 
 [![Ruby](https://github.com/mamantoha/rails_partitioned_cookie/actions/workflows/ruby.yml/badge.svg)](https://github.com/mamantoha/rails_partitioned_cookie/actions/workflows/ruby.yml)
-[![Gem Version](http://img.shields.io/gem/v/rails_partitioned_cookie.svg?style=flat)](https://rubygems.org/gems/rails_partitioned_cookie)
+[![Gem Version](https://badge.fury.io/rb/rails_partitioned_cookie.svg)](https://badge.fury.io/rb/rails_partitioned_cookie)
 [![License](https://img.shields.io/github/license/mamantoha/rails_partitioned_cookie.svg)](https://github.com/mamantoha/rails_partitioned_cookie/blob/main/LICENSE)
 
 This gem sets the `Partitioned` directive on all cookies coming from your Rails app.
